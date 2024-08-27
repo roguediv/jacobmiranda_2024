@@ -1,0 +1,498 @@
+.Popup {
+  z-index: 1000;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;left: 0;
+  display: grid;
+  place-items: center;
+  .backdrop {
+    width: 100vw;height:100vh;
+    position: absolute;
+    top: 0;left: 0;
+    z-index:0;
+
+  }
+  &.init {display: none;}
+  &.show {
+    animation: show-fade-in var(--transition) ease-in forwards;
+  }
+  &:not(.show) {
+    animation: show-fade-out var(--transition) ease-in forwards;
+  }
+  &.theme-secondary .wrapper {
+    h1, h2, h3, h4, h5 {
+    }
+    .back button {
+    }
+  }
+  input {
+    padding: 8px 12px;
+  }
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    max-height: 100vh;
+    overflow: hidden;
+    @media(max-width: $phone) {
+      height: 100%;
+    }
+    .back {
+      z-index: 1;
+      position: absolute;
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 32px;
+        padding: var(--gap-1);
+        display: grid;
+        place-items: center;
+        svg {transition: var(--transition);}
+        &:hover {
+          svg {color: var(--error-200);}
+        }
+      }
+    }
+    .top {
+      height: 80px;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;left:0;
+        width:100%;height: 100%;
+        opacity: .75;
+      }
+    }
+    .bot { 
+      padding: var(--gap-2) var(--gap-1);
+      display: grid;
+      gap: var(--gap-1);
+      max-height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-height: 100%;
+      position: relative;
+      >div {
+        display: grid;
+        gap: var(--gap-1);
+        height: min-content;
+        display: none;
+        >h4 {margin-top: var(--gap-1);}
+        
+        &.slide-in {
+          display: grid;
+          animation: slide-in  var(--transition) ease-in forwards;
+        }
+        &.slide-out {
+          display: grid;
+          animation: slide-out  var(--transition) ease-in forwards;
+        }
+        &.slide-in-rev {
+          display: grid;
+          animation: slide-in-rev  var(--transition) ease-in forwards;
+        }
+        &.slide-out-rev {
+          display: grid;
+          animation: slide-out-rev  var(--transition) ease-in forwards;
+        }
+        &.slide-init {animation: none;}
+      }
+      button {width: 100%;}
+    }
+    .radioButtons {
+      display: flex;
+      gap: var(--gap-1);
+      button:nth-child(2) {
+        font-weight: var(--wgt-h2);
+        &:hover {
+        }
+      }
+    }
+    .nav-btns {
+      display: flex;
+      gap: var(--gap-1);
+      button {
+        width: min-content;
+      }
+    }
+  }
+  @keyframes show-fade-in {
+    0% {opacity: 0;display: grid;}
+    100% {opacity: 1;pointer-events: all;}
+  }
+  @keyframes show-fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;pointer-events: none;}
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translate(110%, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0%, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translate(0%, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-110%, 0);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-in-rev {
+    0% {
+      transform: translate(-110%, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0%, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out-rev {
+    0% {
+      transform: translate(0%, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(110%, 0);
+      opacity: 0;
+    }
+  }
+}
+
+.ContactForm {
+  .wrapper {
+    grid-template-columns: 1fr 1.5fr;
+    background-color: white;
+    max-width: 1000px;
+    grid-template-rows: 1fr;
+    @media (min-width: 1000px) {
+      width: 80vw;
+    }
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 1fr;
+    }
+    .back {
+      right: 0px;
+      z-index: 2;
+      @media (max-width: $phone) {
+        margin-top: var(--gap-4);
+      }
+    }
+    .top {
+      z-index: 1;
+      height: 100%;
+      @media (max-width: $phone) {
+        padding: var(--gap-4) 0;
+      }
+      &:after {
+        content: none;
+      }
+      .background{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #0b2636;
+        pointer-events: none;
+        @media (max-width: $phone) {
+          background-color: transparent;
+        }
+        svg {z-index:1;}
+        svg:nth-child(1) {
+          height: 102%;
+          width: auto;
+          position: absolute;
+          right: 0px;
+          transform: translate(90%, -1px);
+          @media (max-width: $phone) {
+            display: none;
+          }
+        }
+        svg:nth-child(2) {
+          display: none;
+          width: 102%;
+          height: auto;
+          position: absolute;
+          top: 0px;
+          transform: translate(-2px, calc(var(--gap-4) * -1));
+          @media (max-width: $phone) {
+            display: block;
+          }
+        }
+        svg:nth-child(3) {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 100%;
+          transform: translate(-9%, 0);
+          @media (max-width: $phone) {
+            display: none;
+          }
+        }
+        >div {
+          background-color: #0b2636;
+          width: 100vw;
+          height: 100%;
+          position: absolute;
+          right: 0px;
+          @media (max-width: $phone) {
+            height: 100vh;
+            transform: translate(0, calc(-100vh - var(--gap-4)));
+          }
+        }
+      } 
+      .content {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        @media (max-width: $phone) {
+          padding-top: var(--gap-4);
+        }
+        > div {
+          grid-area: 1 / 1 / span 1 / span 1;
+          position: relative;
+          color: var(--neutral-white);
+          text-align: center;
+          display: grid;
+          place-items: center;
+          gap: var(--gap-3);
+          @media (max-width: $phone) {
+            color: black;
+          }
+          span {background-image: var(--blue-gradient);background-clip: text;color: transparent;}
+          button {text-transform: uppercase;}
+          .icons {
+            display: flex;
+            gap: var(--gap-2);
+            svg {
+              width: 40px;
+
+              cursor: pointer;
+              path {
+                transition: var(--transition);
+                @media (max-width: $phone) {
+                  fill: #0b2636;
+                }
+              }
+              &:hover {
+                path {
+                  fill: var(--neutral-300);
+                  @media (max-width: $phone) {
+                    fill: var(--neutral-400);
+                  }
+                }
+              }
+            }
+          }
+        }
+        >div:nth-child(2) {
+          opacity: 0;
+          position: relative;
+          width: 100%;
+          left: var(--gap-4);
+          pointer-events: none;
+          .side {
+            position: absolute;
+            transform: translate(100%, 0);
+            img {
+              width: 130%;
+            }
+          }
+          @media (max-width: $phone) {
+            left: 0;
+            padding: var(--gap-4);
+            position: absolute;
+            transform: translate(0, 25vh);
+            color: white;
+            .side {
+              transform: translate(0, 0);
+              height: 200px;
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transform: scale(1.5);
+              }
+            }
+          }
+        }
+      }
+    }
+    .bot {
+      margin-left: var(--gap-2);
+      padding: var(--gap-4);
+      color: var(--neutral-400);
+      overflow: scroll;
+      @media (max-width: $phone) {
+        padding-top: 0rem;
+        margin-left: 0;
+      }
+      textarea {
+        max-height: 84px;
+        min-height: 84px;
+        overflow: scroll;
+      }
+      >div >p:nth-child(1) {margin-bottom: var(--gap-2);text-align: center;}
+      .radio {
+        display: grid;
+        gap: var(--gap-1);
+        margin-top: var(--gap-1);
+      }
+      .radioButtons {
+        flex-wrap: wrap;
+        button {
+          transition: 0s;
+          border-radius: 2px;
+          font-size: 16px;
+          width: max-content;
+          background-color: transparent;
+          border: 1px solid var(--neutral-300);
+          color: var(--neutral-300);
+          font-size: 14px;
+          &.active, &:hover {
+            background-image: var(--green-gradient);
+            color: white;
+            border-color: white;
+          }
+        }
+      }
+      >div >button {
+        width: max-content;
+        margin: 0 auto;
+        font-size: 20px;
+        background-color: var(--seagreen-500);
+        color: white;
+        margin-top: var(--gap-1);
+        text-transform: uppercase;
+        &:hover {
+          color: var(--seagreen-500);
+          border-color: var(--seagreen-500);
+          background-color: transparent;
+          
+        }
+      }
+    }
+  }
+  &.submitted {
+    .wrapper {
+      .back {
+        svg {
+          fill: white;
+        }
+        &:hover {svg{fill:var(--error-200);}}
+      }
+      .top {
+        .background {
+          svg:nth-child(1) {
+            animation: form-slide-svg ease-in .75s 1;
+            transform: translate(calc(100vw + 88%), -1px);
+          }
+          svg:nth-child(2) {
+            animation: form-slide-svg-phone ease-in-out 1s 1;
+            transform: translate(-2px, calc(100vh - 5rem));
+          }
+          >div {
+            animation: form-slide-div ease-in .75s 1;
+            transform: translate(100vw, 0);
+            @media (max-width: $phone) {
+              animation: form-slide-div-phone ease-in-out 1s 1;
+              transform: translate(0, calc(0vh + 2px - 5rem));
+            }
+          }
+        }
+        .content {
+          >div:nth-child(1) {
+            animation: fade-out-top-content ease-in .25s 1;
+            opacity: 0;
+          }
+          >div:nth-child(2) {
+            animation: fade-in-top-content ease-out .75s 1;
+            opacity: 1;
+            pointer-events: auto;
+            .side {
+              @media (max-width: $phone) {
+                position: relative;
+                animation: makeRel ease-out .25s 1;
+                @keyframes makeRel {
+                  0% {position: absolute;}
+                  99% {position: absolute;}
+                  100% {position: relative;}
+                }
+              }
+            }
+          }
+        }
+      }
+      @keyframes form-slide-svg {
+        0% {
+          transform: translate(90%, -1px);
+        }
+        100% {
+          transform: translate(calc(100vw + 90%), -1px);
+        }
+      }
+      @keyframes form-slide-div {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(100vw, 0);
+        }
+      }
+      @keyframes form-slide-svg-phone {
+        0% {
+          transform: translate(-2px, calc(var(--gap-4) * -1));
+        }
+        100% {
+          transform: translate(-2px, calc(100vh - 5rem));
+        }
+      }
+      @keyframes form-slide-div-phone {
+        0% {
+          transform: translate(0, calc(-100vh + 2px - var(--gap-4)));
+        }
+        100% {
+          transform: translate(0, calc(0vh + 2px - 5rem));
+        }
+      }
+      @keyframes fade-out-top-content {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes fade-in-top-content {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

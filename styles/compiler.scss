@@ -1,0 +1,15 @@
+@import '$main/global';
+@import '$main/nav';
+@import '$main/header';
+@import '$main/footer';
+@import '$main/preloader';
+
+@import '$pages/home';
+@import '$pages/projects';
+
+@import 'popups/Popup';
+
+@import 'components/cards/CardGreenInfo';
+@import 'components/cards/CardProject';
+@import 'components/ProjectCards';
+@import 'components/cards/CtaCard.scss'

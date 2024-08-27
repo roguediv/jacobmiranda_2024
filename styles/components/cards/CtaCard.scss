@@ -1,0 +1,97 @@
+.CtaCard {
+  &.v1 {
+    .sct-content {
+      .card {
+        background-color: var(--neutral-500);
+        color: var(--neutral-white);
+        padding: var(--gap-3);
+        position: relative;
+        .background {
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          height: 100%;
+          img {
+            height: 100%;
+            width: auto;
+            max-width: 85vw;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            @media(max-width: $phone) {opacity: .5;}
+          }
+        }
+        .content {
+          position: relative;
+          display: grid;
+          gap: var(--gap-2);
+          @media (min-width: $phone) {
+            max-width: 70%;
+          }
+          button {width: max-content;}
+        }
+      }
+      @media (max-width: 450px) {
+        padding: 0;
+        .card .background img {
+          max-width: 110vw;
+        }
+      }
+    }
+  }
+  &.v2 {
+    $breakpoint: 650px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    gap: var(--gap-4);
+    h4 {
+      @media (min-width: $breakpoint) {
+        max-width: 60%;
+      }
+    }
+    .featured-review {
+      position: relative;
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      @media (max-width: $breakpoint) {
+        grid-template-columns: 1fr;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      >.content {
+        position: relative;
+        padding: var(--gap-3);
+        display: grid;
+        gap: var(--gap-2);
+        color: var(--neutral-white);
+        .v2 {
+          color: var(--neutral-200);
+        }
+        button {
+          width: max-content;
+          padding: 0 var(--gap-3);
+          text-transform: uppercase;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+      }
+      .img-hldr {
+        position: relative;
+        @media (max-width: $breakpoint) {
+          display: none;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}

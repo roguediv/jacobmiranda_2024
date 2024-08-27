@@ -1,0 +1,94 @@
+.CardProject {
+  display: grid;
+  grid-template-rows: 150px min-content;
+  position: relative;
+  >svg, >img, >.background {
+    position: absolute;
+    width: 100%;
+  }
+  >.background {
+    height: 75%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;left:0;
+      height:100%;width:100%;
+      opacity: .5;
+    }
+  }
+  >.content{
+    grid-area: 2/1/span 1/span 1;
+    position: relative;
+    display: grid;
+    align-items: left;
+    text-align: left;
+    padding: var(--gap-2);
+    gap: var(--gap-1);
+    grid-template-rows: min-content min-content min-content;
+    svg {
+      position: absolute;
+      height: 100%;
+      width: calc(100% + 0px);
+    }
+    >img, >p, >h4 {
+      height: min-content;
+      position: relative;
+    }
+    >img {
+      padding-top: var(--gap-1);
+      width: auto;height: auto;
+      max-width: 150px;
+      object-fit: cover;
+      @media (max-width: 550px) {
+        opacity: 0;
+      }
+    }
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+}
+.ProjectCards {
+  .project-holder {
+    a {
+      &:nth-child(even) {
+        .CardProject {
+          >.background {
+            &:after {
+              background-image: linear-gradient(to right, transparent, var(--fuchsia-400));
+            }
+          }
+          >.content {
+            >svg {
+              .backstroke path {
+                stroke: var(--fuchsia-400);
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .CardProject {
+          >.background {
+            &:after {
+              background-image: linear-gradient(to right, transparent, var(--seagreen-400));
+            }
+          }
+          >.content {
+            >svg {
+              .backstroke path {
+                stroke: var(--seagreen-400);
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
