@@ -13,13 +13,13 @@ export async function POST(req: Request) {
       from: 'contactrequest@info.jacobmiranda.com',
       to: ['contact@jacobmiranda.com'],
       subject: 'New Service Request',
-      react: ServiceRequest({
-        name: name,
-        email: email,
-        phone: phone, 
-        tags: tags,
-        message: message, 
-      }),
+      // react: ServiceRequest({
+      //   name: name,
+      //   email: email,
+      //   phone: phone, 
+      //   tags: tags,
+      //   message: message, 
+      // }),
       text: `You have a new contact request: \r\n`
       + `Name: ${name} \r\n`
       + `Email: ${email} \r\n`
