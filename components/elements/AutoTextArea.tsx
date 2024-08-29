@@ -11,7 +11,7 @@ type props = {
 
 const SF_Unit_Pro = localFont({src: [
   {
-    path: '../../public/fonts/FF Unit Pro light.otf',
+    path: '../../public/fonts/FF Unit Pro Light.otf',
     weight: '300'
   },
   {
@@ -19,11 +19,11 @@ const SF_Unit_Pro = localFont({src: [
     weight: '400'
   },
   {
-    path: '../../public/fonts/FF Unit Pro bold.otf',
+    path: '../../public/fonts/FF Unit Pro Bold.otf',
     weight: '600'
   },
   {
-    path: '../../public/fonts/FF Unit Pro black.otf',
+    path: '../../public/fonts/FF Unit Pro Black.otf',
     weight: '800'
   }
 ]})
