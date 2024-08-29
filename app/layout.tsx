@@ -8,7 +8,7 @@ import ContactForm from '@/components/popups/contactForm/ContactForm'
 
 const SF_Unit_Pro = localFont({src: [
   {
-    path: './public/fonts/FF Unit Pro light.otf',
+    path: './fonts/FF Unit Pro light.otf',
     weight: '300'
   },
   {
