@@ -465,6 +465,19 @@ header {
       color: var(--neutral-white);
       gap: var(--gap-2);
       height: 115%;
+      .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 var(--gap-sides);
+        a {
+          position: relative;
+          top: 120px;
+          display: flex;
+          align-items: center;
+          gap: var(--gap-1);
+        }
+      }
       .r1 {
         margin-top: auto;
         display: grid;

@@ -11,6 +11,7 @@ import { DiPhotoshop } from 'react-icons/di'
 import { IoLogoFigma } from 'react-icons/io5'
 import { SiMysql, SiTailwindcss } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandTypescript } from 'react-icons/tb'
+import { FaArrowLeftLong } from 'react-icons/fa6'
 
 
 type props = {
@@ -191,6 +192,9 @@ const Nav: React.FC<props> = ({className = '', page = "Jacob Miranda", title = "
               alt="Overlay Background"/>
           </div>
           <div className="content">
+            <div className="back">
+              <Link href="/projects"><FaArrowLeftLong /> Back to Projects</Link>
+            </div>
             <div className="r1">
               <h6>Project</h6>
               <div className="line"></div>
