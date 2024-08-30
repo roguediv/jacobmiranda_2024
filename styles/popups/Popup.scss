@@ -116,8 +116,6 @@
       gap: var(--gap-1);
       button:nth-child(2) {
         font-weight: var(--wgt-h2);
-        &:hover {
-        }
       }
     }
     .nav-btns {
@@ -368,10 +366,17 @@
           border: 1px solid var(--neutral-300);
           color: var(--neutral-300);
           font-size: 14px;
-          &.active, &:hover {
+          &.active {
             background-image: var(--green-gradient);
             color: white;
             border-color: white;
+          }
+          @media (min-width: $phone) {
+            &:hover {
+              background-image: var(--green-gradient);
+              color: white;
+              border-color: white;
+            }
           }
         }
       }
@@ -387,7 +392,6 @@
           color: var(--seagreen-500);
           border-color: var(--seagreen-500);
           background-color: transparent;
-          
         }
       }
     }

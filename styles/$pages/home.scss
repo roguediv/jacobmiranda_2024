@@ -571,10 +571,12 @@
             padding: var(--gap-1) var(--gap-2);
             transition: var(--transition);
           }
-          &:hover {
-            span {
-              background-color: var(--seagreen-300);
-              color: black;
+          @media (min-width: $phone) {
+            &:hover {
+              span {
+                background-color: var(--seagreen-300);
+                color: black;
+              }
             }
           }
           &:not(.toggled) {
