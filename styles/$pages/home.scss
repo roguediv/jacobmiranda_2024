@@ -1014,6 +1014,7 @@
           display: grid;
           gap: var(--gap-3);
           padding: var(--gap-1);
+          @media (min-width: $phone) {h2 {max-width: 900px; margin: 0 auto;}}
           span {
             background-image: linear-gradient(to bottom right, #2fd1bb 30%, #1fa3b4 60%);
             background-clip: text;
