@@ -67,12 +67,9 @@ const Nav: React.FC<props> = ({className = ''}) => {
       navElement?.classList.add("phone-fade-out");
       setTimeout(() => {
         navElement?.classList.remove("activePhone", "phone-fade-out");
-        burger?.classList.remove("open")
       }, 250)
-
     } else {
       navElement?.classList.add("activePhone");
-      burger?.classList.add("open")
     }
   }
   
