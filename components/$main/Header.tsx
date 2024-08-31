@@ -79,12 +79,14 @@ const Nav: React.FC<props> = ({className = '', page = "Jacob Miranda", title = "
                 <div></div>
               </div>
               <Image
+                priority
                 src={`/images/assets/heartbackground.png`}
                 width={1000}
                 height={1000}
                 alt="Overlay Background"
               />
               <Image
+                priority
                 id='imgHeart'
                 src={`/images/assets/heart.png`}
                 width={1000}
@@ -186,6 +188,7 @@ const Nav: React.FC<props> = ({className = '', page = "Jacob Miranda", title = "
           </div>
           <div className="background">
             <Image 
+              priority
               src={`/images/projects/${title}/background.png`}
               width={1500}
               height={1500}
@@ -201,6 +204,7 @@ const Nav: React.FC<props> = ({className = '', page = "Jacob Miranda", title = "
             </div>
             <div className="r2">
               <Image 
+                priority
                 src={`/images/projects/${title}/logo.png`}
                 width={500}
                 height={500}
