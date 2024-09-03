@@ -1120,6 +1120,15 @@
             }
           }
         }
+        .mainPreviewLink {
+          &:hover {
+            color: var(--neutral-500);
+            opacity: .9;
+            .text-area-1 .white .text {
+              
+            }
+          }
+        }
       }
     }
     .card {
