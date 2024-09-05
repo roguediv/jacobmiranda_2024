@@ -3,7 +3,7 @@
 import ObserveElement from "@/components/$functions/ObserveElement";
 import React, { useEffect, useState } from "react";
 import { DiPhotoshop } from "react-icons/di";
-import { FaDigitalOcean, FaHtml5, FaPhp, FaReact, FaSass, FaUbuntu } from "react-icons/fa";
+import { FaDigitalOcean, FaHtml5, FaPhp, FaReact, FaSass, FaUbuntu, FaWordpress } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { SiMysql, SiNginx, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
@@ -61,6 +61,7 @@ const ProjectSct1 : React.FC<props> = ({className = '', title, overview, timefra
                 {technologies?.mysql == 1 ? <SiMysql /> : ''}
                 {technologies?.next == 1 ? <TbBrandNextjs /> : ''}
                 {technologies?.php == 1 ? <FaPhp /> : ''}
+                {technologies?.wordpress == 1 ? <FaWordpress /> : ''}
                 {technologies?.ts == 1 ? <TbBrandTypescript /> : ''}
                 {technologies?.figma == 1 ? <IoLogoFigma /> : ''}
                 {technologies?.photoshop == 1 ? <DiPhotoshop /> : ''}

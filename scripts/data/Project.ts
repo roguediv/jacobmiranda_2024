@@ -19,6 +19,7 @@ export interface Project {
       mysql: number;
       next: number;
       php: number;
+      wordpress: number;
       ts: number;
       figma: number;
       photoshop: number;

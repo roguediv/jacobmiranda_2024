@@ -293,7 +293,7 @@
       gap: var(--gap-3);
       >div {
         display: grid;
-        gap: var(--gap-4);
+        gap: var(--gap-3);
         >div {
           display: grid;
           align-items: center;
@@ -393,6 +393,11 @@
           top: 50%;
         }
       }
+    }
+  }
+  &.project-fitprimes {
+    section#project-sct-2 div.sct-content div.col-2 div.c1 img:nth-child(3) {
+      height: auto;
     }
   }
 }

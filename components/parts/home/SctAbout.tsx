@@ -9,6 +9,7 @@ import SvgAboutBox from "../../svg/SvgAboutBox";
 import SvgDiamond from "../../svg/SvgDiamond";
 import { useEffect, useState } from "react";
 import ObserveElement from "@/components/$functions/ObserveElement";
+import BtnForm from "@/components/popups/BtnForm";
 
 type props = {
   className?: string;
@@ -218,7 +219,7 @@ const SctAbout : React.FC<props> = ({className = ''}) => {
             <h6>Let's get started</h6>
             <h4>Contact me now so we can start working together!</h4>
             <div className="col-2">
-              <button className="fuchsia">Contact Me</button>
+              <BtnForm className='fuchsia' form='ContactForm' text='Contact Me' />
               <button>Resume</button>
             </div>
           </div>

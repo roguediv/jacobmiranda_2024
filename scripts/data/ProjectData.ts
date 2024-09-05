@@ -22,6 +22,7 @@ export const ProjectData: Project[] = [
         mysql: 1,
         next: 1,
         php: 0,
+        wordpress: 0,
         ts: 1,
         figma: 1,
         photoshop: 1,
@@ -56,15 +57,15 @@ export const ProjectData: Project[] = [
       desc: "The redesigned website has significantly boosted Whimsy Decor's online presence, providing a professional platform for showcasing their portfolio. This has led to increased customer engagement and higher conversion rates, as users can easily view their work and contact them for new projects. The site is now a powerful marketing tool, attracting potential clients and driving business growth."
     },
     sct5: {
-      header: "Key Results",
+      header: "Growth Highlights",
       items: [{
-        header: "15%",
-        headerLow: "",
-        desc: "Since the website launch, Whimsy Decor has seen a 15% increase in client inquiries through the contact form."
+        header: "Figma",
+        headerLow: "Design",
+        desc: "Working directly with Figma provided me with valuable experience in collaborating with designers. This process improved my ability to understand how their terminology applies to my codebase."
       }, {
-        header: "40+",
-        headerLow: "New Leads",
-        desc: "The new site has generated over 40 new leads within the first three months, demonstrating its effectiveness as a marketing tool."
+        header: "CMS",
+        headerLow: "Skills",
+        desc: "Throughout this project, I gained hands-on experience setting up a DigitalOcean server to host and manage several Next.js applications, each with its own MySQL database. I now have a solid understanding of how Nginx works on Linux and how to efficiently run multiple projects from a single server."
       }]
     }
   },
@@ -73,22 +74,23 @@ export const ProjectData: Project[] = [
       title: "jamdealer",
       displayTitle: "Jamdealer",
       header: "Amplifying your music experience, one beat at a time.",
-      desc: "Jamaine Tucker, your go-to for creating awesome jams, has devoted his life to making music. JamDealer serves as his platform to connect with new audiences and assist them in selecting the perfect beats for their music projects.",
+      desc: "Jamaine, your go-to for creating awesome jams, is devoted to making music. JamDealer serves as his platform to connect with new audiences and assist them in selecting the perfect beats for their music projects.",
       theme: "theme-purple1",
     },
     sct1: {
       title: "Your go-to fam for <h>creating<h> awesome jams.",
-      overview: "Jamaine Tucker, your go-to for creating awesome jams, has devoted his life to making music. JamDealer serves as his platform to connect with new audiences and assist them in selecting the perfect beats for their music projects.",
+      overview: "Jamdealer is a platform designed for musicians to buy and sell beats and songs. Developed for Jamaine, who is passionate about creating sophisticated music, the site aims to help him connect with more musicians, showcase his work, and handle payments for those interested in purchasing his music or collaborating with him. Built on WordPress, the website integrates Stripe for transactions and MySQL for the backend database. It’s fully customized to fit Jamaine’s needs, featuring a CMS that allows him to easily update and manage the site.",
       timeframe: {
         num: "1",
         type: "Week",
-        desc: "Completed Wordpress Website"
+        desc: "Completed Website and CMS"
       },
       technologies: {
         react: 0,
         mysql: 1,
         next: 0,
-        php: 0,
+        php: 1,
+        wordpress: 1,
         ts: 0,
         figma: 0,
         photoshop: 1,
@@ -105,7 +107,7 @@ export const ProjectData: Project[] = [
       desc: "Jamaine approached me with the ambition to expand his music outreach, aiming to support fellow creators and generate income. I offered my services to swiftly develop a website showcasing his portfolio, facilitating payments, and delivering beats. Additionally, I provided instructional videos on navigating and managing products within the WordPress platform.",
       card1: {
         header: "Solution",
-        desc: "Website<br>Development"
+        desc: "CMS<br>Wordpress Website"
       },
       card2: {
         header: "Networking",
@@ -114,24 +116,24 @@ export const ProjectData: Project[] = [
     },
     sct3: {
       header1: "Designing JamDealer",
-      desc1: "I collaborated directly with Jermaine to design JamDealer on WordPress, ensuring the website reflects the desired vibe. JamDealer functions as a catalog shop where beats are categorized for easy browsing, allowing users to listen to demos before purchasing. Beyond its e-commerce capabilities, the site serves as Jermaine's portfolio, showcasing his musical style and facilitating networking with new artists. The WordPress platform enables Jermaine to effortlessly update content, add new beats to the shop, and make adjustments as needed. To simplify this process, I created instructional videos guiding him through website updates and remain readily available for any further assistance.",
+      desc1: "I collaborated directly with Jamaine to design JamDealer on WordPress, ensuring the website reflects the desired vibe. JamDealer functions as a catalog shop where beats are categorized for easy browsing, allowing users to listen to demos before purchasing. Beyond its e-commerce capabilities, the site serves as Jamaine's portfolio, showcasing his musical style and facilitating networking with new artists. The WordPress platform enables Jamaine to effortlessly update content, add new beats to the shop, and make adjustments as needed. To simplify this process, I created instructional videos guiding him through website updates and remain readily available for any further assistance.",
       header2: "Musical Outreach",
-      desc2: "JamDealer not only serves as an e-commerce platform but also enhances Jermaine's outreach to a broader audience. By providing a user-friendly interface where beats are neatly categorized and accompanied by demos, the website empowers potential buyers to make informed decisions. Additionally, Jermaine's portfolio section effectively communicates his artistic vision and strengths, fostering connections within the music industry. With WordPress's intuitive editing capabilities and ongoing support, Jermaine can confidently manage and expand his online presence, focusing more on creating music and less on technicalities.",
+      desc2: "JamDealer not only serves as an e-commerce platform but also enhances Jamaine's outreach to a broader audience. By providing a user-friendly interface where beats are neatly categorized and accompanied by demos, the website empowers potential buyers to make informed decisions. Additionally, Jamaine's portfolio section effectively communicates his artistic vision and strengths, fostering connections within the music industry. With WordPress's intuitive editing capabilities and ongoing support, Jamaine can confidently manage and expand his online presence, focusing more on creating music and less on technicalities.",
     },
     sct4: {
       header: "Relaxed and Trustworthy Product",
-      desc: "The website is crafted to emit a relaxed and trustworthy vibe, offering straightforward access to information about Jermaine Tucker and his latest releases. It provides a seamless user experience, ensuring visitors can easily navigate and discover details about Jermaine's music. The design emphasizes clarity and accessibility, making it effortless for users to engage with his portfolio and stay updated on his newest tracks.",
+      desc: "The website is crafted to emit a relaxed and trustworthy vibe, offering straightforward access to information about Jamaine Tucker and his latest releases. It provides a seamless user experience, ensuring visitors can easily navigate and discover details about Jamaine's music. The design emphasizes clarity and accessibility, making it effortless for users to engage with his portfolio and stay updated on his newest tracks.",
     },
     sct5: {
-      header: "Key Results",
+      header: "What I Learned:",
       items: [{
-        header: "15%",
-        headerLow: "",
-        desc: "Since the website launch, Whimsy Decor has seen a 15% increase in client inquiries through the contact form."
+        header: "CMS",
+        headerLow: "Management",
+        desc: "Through this project, I mastered the integration of WordPress into my existing DigitalOcean server without disrupting the Next.js sites already in place. I ensured that the client has complete access to their CMS and database while also setting up the server to support multiple WordPress sites simultaneously. This experience has broadened my skills in server management and multi-platform hosting."
       }, {
-        header: "40+",
-        headerLow: "New Leads",
-        desc: "The new site has generated over 40 new leads within the first three months, demonstrating its effectiveness as a marketing tool."
+        header: "Video",
+        headerLow: "Tutorials",
+        desc: "Since Jamaine was new to using a CMS, I created a series of video tutorials to guide him through WordPress after we completed the website. I organized these tutorials in Dropbox, arranging them into folders with clear titles to make navigation easy. This experience improved my ability to explain technical concepts to non-technical users and enhanced my skills in client communication, all while deepening my own understanding of the CMS technology."
       }]
     }
   },
@@ -145,7 +147,7 @@ export const ProjectData: Project[] = [
     },
     sct1: {
       title: "Empowering fitness journeys with <h>intuitive<h> wellness solutions.",
-      overview: "FitPrimes empowers personal trainers by providing a platform to publish and sell workout plans, communicate effectively with clients, monitor progress, and offer tailored feedback on their fitness goals.",
+      overview: "FitPrimes is a prototype social media platform designed to connect individuals with personal trainers. The platform enables trainers to create fitness plans, publish articles, monitor client progress, and facilitate seamless payments. A key feature is the fully developed article system, powered by a custom CMS built with Next.js. This dynamic content creation system allows trainers to contribute health-related articles, boosting FitPrime's SEO by increasing the site's visibility through relevant search terms.",
       timeframe: {
         num: "2",
         type: "Weeks",
@@ -156,6 +158,7 @@ export const ProjectData: Project[] = [
         mysql: 1,
         next: 1,
         php: 0,
+        wordpress: 0,
         ts: 1,
         figma: 1,
         photoshop: 1,
@@ -190,15 +193,15 @@ export const ProjectData: Project[] = [
       desc: "FitPrimes is a modern Next.js web app featuring an intuitive article creation system and advanced CSS keyframe animations. These animations are smooth and contribute significantly to its modern design. The intuitive article creation system allows users to easily generate health-related content, enhancing engagement and education. Combined with Next.js's efficiency, the platform ensures fast loading times and seamless navigation, making FitPrimes a compelling choice for fitness enthusiasts and professionals seeking a contemporary online presence.",
     },
     sct5: {
-      header: "Outcome",
+      header: "Key Takeaways",
       items: [{
-        header: "Prototype",
-        headerLow: "Design Testing",
-        desc: "The FitPrimes prototype contributes to visualizing a future product with its innovative features and sleek design."
+        header: "NextJS",
+        headerLow: "Framework",
+        desc: "Working on Fitprimes, my first Next.js project, allowed me to dive deep into the workings of both Next.js and React. I was able to seamlessly integrate what I already knew about JavaScript and SASS with these new tools, expanding my skills and understanding of modern web development."
       }, {
-        header: "Dynamic",
-        headerLow: "Article Creation",
-        desc: "Having an easy article creation management system is crucial for SEO as it facilitates frequent content updates and enhances website relevance and visibility in search engine rankings."
+        header: "CMS",
+        headerLow: "Hardcoded",
+        desc: "The most challenging part of Fitprimes was designing a custom CMS that dynamically generates articles with MySQL. It handles various content types like paragraphs, lists, images, and descriptions. This taught me to simplify complex processes, making them intuitive and user-friendly."
       }]
     }
   },
@@ -223,6 +226,7 @@ export const ProjectData: Project[] = [
         mysql: 1,
         next: 0,
         php: 1,
+        wordpress: 0,
         ts: 1,
         figma: 1,
         photoshop: 1,
@@ -257,15 +261,15 @@ export const ProjectData: Project[] = [
       desc: "FansLyte's trustworthy and dynamic platform has significantly contributed to its success, providing influencers with a robust platform to engage meaningfully with their fans while driving business growth. This website marks the initial iteration of FansLyte and has served as their primary online presence for over two years.",
     },
     sct5: {
-      header: "Outcome",
+      header: "Skill I Learned",
       items: [{
-        header: "100+",
-        headerLow: "Partners",
-        desc: "Since the website launched in 2022, FansLyte has gained over 100 new partners who are making sales on their platform."
+        header: "SEO",
+        headerLow: "Optimization",
+        desc: "For Fanslyte, I worked on boosting the website’s Google ranking to build trust with the audience. I achieved top search results, encouraged reviews, and established hyperlinks. This project enhanced my skills in SEO and social media integration while teaching me effective strategies for increasing online visibility and trust."
       }, {
-        header: "#1",
-        headerLow: "Result on Google",
-        desc: "When you search the name FansLyte on google, the first result is FansLyte’s main website, the entire first page is filled with positive reviews for FansLyte, and FansLyte maintains a 5 star rating."
+        header: "Webapp",
+        headerLow: "Hardcoded",
+        desc: "Working on the Fanslyte project, I gained a solid understanding of PHP by hardcoding a system that made web pages update without reloading the entire page. This taught me how many website builders and frameworks work behind the scenes."
       }]
     }
   }, 

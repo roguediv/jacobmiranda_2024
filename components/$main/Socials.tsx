@@ -9,9 +9,9 @@ type props = {
 const NavLinks: React.FC<props> = ({className = ''}) => {
   return (
     <div className="Socials">
-      <Link href="#"><FaLinkedin /></Link>
-      <Link href="#"><FaPhoneAlt /></Link>
-      <Link href="#"><MdEmail /></Link>
+      <Link href="https://www.linkedin.com/in/jacob-miranda-1a83aa147/" target="_blank"><FaLinkedin /></Link>
+      <a className="contact-link" href="tel:+16468309178"><FaPhoneAlt /></a>
+      <a  className="contact-link" href="mailto:contact@jacobmiranda.com?subject=Technical%20Services&body=Hello%20Jacob!"><MdEmail /></a>
     </div>
   )
 }

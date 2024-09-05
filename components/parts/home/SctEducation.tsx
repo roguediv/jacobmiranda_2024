@@ -50,7 +50,8 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
                 <h6 className="v2">Bachelor Degree</h6>
                 <p className="v2">Computer Engineering</p>
               </div>
-              <p className="v2">Jacob has a computer engineering degree at UWGB</p>
+              <p className="v2">Taught students programming as an achedemic coach for the CS department.</p>
+              <p className="v2">Recognized for demonstrating leadership in group projects and excelling in challenging tasks</p>
             </div>
             <div className="i">
               <div className="triangle"></div>
@@ -63,7 +64,7 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
               <ul>
                 <li><p className="v2">Vice president of Bits and Bytes club.</p></li>
                 <li><p className="v2">Assisted students in maintenance of computer hardware.</p></li>
-                <li><p className="v2">Volunteered at various organizations.</p></li>
+                <li><p className="v2">Engaged in campus life through volunteer work.</p></li>
               </ul>
             </div>
           </div>
