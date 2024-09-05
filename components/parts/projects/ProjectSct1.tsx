@@ -13,7 +13,7 @@ type props = {
   title: string | undefined;
   overview: string | undefined;
   timeframe: { num: string; type: string; desc: string; } | undefined;
-  technologies: {react: number; mysql: number; next: number; php: number; ts: number; figma: number, photoshop: number, tailwind: number; html: number; sass: number; digitalOcean: number; ubuntu: number; nginx: number; } | undefined;
+  technologies: {react: number; mysql: number; next: number; php: number; wordpress: number; ts: number; figma: number, photoshop: number, tailwind: number; html: number; sass: number; digitalOcean: number; ubuntu: number; nginx: number; } | undefined;
 }
 
 const ProjectSct1 : React.FC<props> = ({className = '', title, overview, timeframe, technologies}) => {
