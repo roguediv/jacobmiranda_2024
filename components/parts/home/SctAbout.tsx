@@ -84,15 +84,15 @@ const SctAbout : React.FC<props> = ({className = ''}) => {
             <ul>
               <li>
                 <SvgDiamond />
-                <p>Coding</p>
+                <p>Problem Solving</p>
               </li>
               <li>
                 <SvgDiamond />
-                <p>Design</p>
+                <p>Database and Server Navigation</p>
               </li>
               <li>
                 <SvgDiamond />
-                <p>Media</p>
+                <p>AI and Modern Technologies</p>
               </li>
             </ul>
           </div>
@@ -176,7 +176,7 @@ const SctAbout : React.FC<props> = ({className = ''}) => {
             <div className="background">
               <svg width="306" height="233" viewBox="0 0 306 233" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.2" d="M1.22656 191.579V221.569L246.5 221.569L270.152 191.579H284.531L305.072 158V8.64844L297.5 1.00003H166.213L156.764 12.5033H11.4993L11.4973 180.075L1.22656 191.579Z" fill="url(#paint0_linear_0_1)" stroke="#60F49C" stroke-width="0.821663"/><path d="M1 232.148V221.648H167L155.5 232.148H1Z" fill="#60F49C"/><path d="M165.5 10.6484L171 4.64844H295L301 10.6484V84.1484L295 89.1484V135.648L290.5 139.648V10.6484H165.5Z" fill="#60F49C" stroke="#60F49C"/><defs><linearGradient id="paint0_linear_0_1" x1="153.614" y1="469.145" x2="380.33" y2="98.6462" gradientUnits="userSpaceOnUse"><stop stop-color="#40C997"/><stop offset="1" stop-color="#116661"/></linearGradient></defs></svg>
             </div>
-            <p >Jacob Miranda is a versatile computer engineer, blending roles in website development with finesse. Armed with the latest frameworks and technologies, he navigates both front and back-end development with finesse, crafting attractive and modern websites.</p>
+            <p >Jacob Miranda is a versatile computer engineer, blending roles in website development with finesse. Armed with the latest frameworks and technologies, he creatively navigates both front and back-end, crafting attractive and modern websites.</p>
           </div>
           <div className="traits">
             <div className="background">

@@ -26,7 +26,10 @@ const SF_Unit_Pro = localFont({src: [
 ]})
 
 export const metadata: Metadata = {
-  title: 'Jacob Miranda - Software Solutions',
+  title: {
+    default: 'Jacob Miranda - Software Solutions',
+    template: '%s - Jacob Miranda'
+  },
   description: 'I offer complete software solutions for enahancing your brand and increasing conversions. SEO, websites, mobile apps, databases, and more!',
 }
 

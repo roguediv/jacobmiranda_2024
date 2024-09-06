@@ -8,8 +8,12 @@ import ProjectSct5 from "@/components/parts/projects/ProjectSct5";
 import CtaCard from "@/components/parts/general/CtaCard";
 import {ProjectData} from "@/scripts/data/ProjectData"
 import { Project } from "@/scripts/data/Project";
-import Image from "next/image"
-import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'All Projects - Jacob Miranda',
+  description: 'A portfolio of Jacob\'s projects.',
+}
 
 export default function page({params}: {params: {title: string}}) {
   let proj : Project | undefined = ProjectData.find((array : Project) => array.body.title === params.title);
