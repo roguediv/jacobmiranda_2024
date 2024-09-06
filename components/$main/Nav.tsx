@@ -28,7 +28,6 @@ const Nav: React.FC<props> = ({className = ''}) => {
     });
     const handleAnchorClick = (event: Event) => {
       const clickedAnchor = event.target as HTMLAnchorElement;
-      // Remove the "show" class from navElement or modify as needed
       navElement?.classList.add("phone-fade-out");
       setTimeout(() => {
         navElement?.classList.remove("activePhone", "phone-fade-out");
@@ -39,6 +38,7 @@ const Nav: React.FC<props> = ({className = ''}) => {
 
     if (anchorElements) {
       anchorElements.forEach((anchor) => {
+        if (anchor.classList.contains('ignore')) return;
         anchor.addEventListener("click", handleAnchorClick);
       });
     }
@@ -54,6 +54,7 @@ const Nav: React.FC<props> = ({className = ''}) => {
 
       if (anchorElements) {
         anchorElements.forEach((anchor) => {
+          if (anchor.classList.contains('ignore')) return;
           anchor.removeEventListener("click", handleAnchorClick);
         });
       }
@@ -78,7 +79,6 @@ const Nav: React.FC<props> = ({className = ''}) => {
       <div className={`wrapper`}>
         <div className="scroller-contain">
           <div className="nav-content">
-
             <Socials/>
             <div className="logo">
               <SvgLogo />
@@ -98,10 +98,8 @@ const Nav: React.FC<props> = ({className = ''}) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
-      
       <div className="nav-trigger"></div>
     </nav>
   )

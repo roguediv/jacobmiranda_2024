@@ -9,6 +9,7 @@ export default function Transition({children}: {children: React.ReactNode}) {
     
     const anchorTags = document.querySelectorAll('a');
     anchorTags.forEach(anchor => {
+      if (anchor.classList.contains('ignore')) return;
       anchor.addEventListener('click', (event: MouseEvent) => {
         const target = event.target as HTMLAnchorElement;
         const href = target.getAttribute('href');
