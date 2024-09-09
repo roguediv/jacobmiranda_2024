@@ -44,8 +44,8 @@ const SctHire : React.FC<props> = ({className = ''}) => {
         <div className="r1">
           <div className="p1">
             <div className="sct-header">
-              <h1 className="v2">Set Me<br/>Apart</h1>
-              <h1 className="v3">Set Me<br/><span>Apart</span></h1>
+              <h1 className="v2">Why<br/>Hire Me</h1>
+              <h1 className="v3">Why<br/><span>Hire</span> Me</h1>
               <SvgCyberCircles/>
             </div>
             <SvgGreenBarsBorder/>
