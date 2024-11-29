@@ -1,6 +1,6 @@
 import TextInput from "@/components/elements/html/TextInput";
 import ToggleList from "@/components/elements/html/ToggleList";
-import CptInvoice from "@/components/billing/CptInvoice";
+import CptInvoice from "@/components/parts/billing/CptInvoice";
 
 export default async function BillingPage({
   searchParams,

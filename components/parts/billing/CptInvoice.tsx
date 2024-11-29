@@ -75,7 +75,7 @@ const CptInvoice : React.FC<props> = ({className = '', hasDomainEmailSelector = 
         <div>Item</div><div>Price</div>
       </div>
       <div>
-        <div>Domain Renual</div>
+        <div>Domain Renewal</div>
         <div>INCLUDED</div>
       </div>
       {/* <div>

@@ -1,5 +1,5 @@
-import CptInvoice from "@/components/billing/CptInvoice";
-import StripePayment from "@/components/billing/StripePayment";
+import CptInvoice from "@/components/parts/billing/CptInvoice";
+import StripePayment from "@/components/parts/billing/StripePayment";
 import { Invoice } from "@/scripts/data/BillingInterface";
 
 export default async function SettingsPage(props: {params: Promise<{id: string}>}) {
