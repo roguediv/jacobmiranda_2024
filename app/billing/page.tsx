@@ -1,7 +1,6 @@
 import TextInput from "@/components/elements/html/TextInput";
 import ToggleList from "@/components/elements/html/ToggleList";
 import CptInvoice from "@/components/billing/CptInvoice";
-import SubmitInvoiceButton from "@/components/billing/SubmitInvoiceButton";
 
 export default async function BillingPage({
   searchParams,
