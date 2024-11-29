@@ -2,7 +2,7 @@
 import React, {forwardRef, useEffect, Ref, useRef, useState } from 'react';
 import { Montserrat } from 'next/font/google';
 import { FiPlusCircle } from 'react-icons/fi';
-import { prismaExecutionService } from '@/components/scripts/database/PrismaExecutionService';
+//import { prismaExecutionService } from '@/components/scripts/database/PrismaExecutionService';
 
 
 type props = {
@@ -32,7 +32,7 @@ const ActiveButton = forwardRef<HTMLButtonElement, props>(({className = "", text
   }
 
   async function onClick() {
-    if (!prismaExecutionService.startQuery()) return;
+    //if (!prismaExecutionService.startQuery()) return;
     if (!button.current) return;
 
     button.current.classList.toggle('active');
@@ -45,7 +45,7 @@ const ActiveButton = forwardRef<HTMLButtonElement, props>(({className = "", text
       button.current.classList.add('active');
     }
     
-    prismaExecutionService.endQuery();
+    //prismaExecutionService.endQuery();
   }
 
   return (
