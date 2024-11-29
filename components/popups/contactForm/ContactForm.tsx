@@ -61,7 +61,7 @@ const ContactForm : React.FC<props> = ({className = ''}) => {
       <div className="backdrop"></div>
       <div className="wrapper">
         <div className="back">
-          <button className="custom" onClick={closeForm}>
+          <button aria-label="Close" className="custom" onClick={closeForm}>
             <MdClose />
           </button>
         </div>
