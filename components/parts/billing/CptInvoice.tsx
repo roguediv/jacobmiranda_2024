@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 type props = {
   className?: string;
   hasDomainEmailSelector?: boolean;
-  invoice?: Partial<Invoice>;
+  invoice: Partial<Invoice>;
 }
 
 const CptInvoice : React.FC<props> = ({className = '', hasDomainEmailSelector = false, invoice=null }) => {
   let emailStartNum = 1;
+  if (!invoice) return <></>
   if (invoice) emailStartNum = 0;
 
   const [emailNum, setEmailNum] = useState(emailStartNum);
@@ -74,18 +75,27 @@ const CptInvoice : React.FC<props> = ({className = '', hasDomainEmailSelector = 
       <div className="header">
         <div>Item</div><div>Price</div>
       </div>
-      <div>
+      {/* <div>
         <div>Domain Renewal</div>
         <div>INCLUDED</div>
-      </div>
+      </div> */}
       {/* <div>
         <div>Custom Domain Transfer</div>
         <div>$<div className="price">12.82</div> <span style={{opacity: 0}}>/m</span></div>
       </div> */}
-      <div>
-        <div>Website Hosting</div>
-        <div>$<div className="price monthlyPrice">25.00</div> <span>/m</span></div>
-      </div>
+      {invoice.total as number > 0 ? <>
+        <div>
+          <div>{invoice.totalTitle ? invoice.totalTitle : "Charge"}</div>
+          <div>$<div className="price totalPrice">{(invoice.total as number / 100).toFixed(2)}</div></div>
+        </div>
+      </> : <></>}
+      {invoice.monthly as number > 0 ? <>
+        <div>
+          <div>{invoice.monthlyTitle ? invoice.monthlyTitle : "Monthly Charge"}</div>
+          <div>$<div className="price monthlyPrice">{(invoice.monthly as number / 100).toFixed(2)}</div> <span>/m</span></div>
+        </div>
+      </> : <></>}
+
       {renderEmailRows()}
       <div className="total">
         <div className="sm">Total:</div> <div className="sm">$<div>{(totalPrice).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div></div>

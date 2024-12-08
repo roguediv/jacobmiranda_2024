@@ -14,7 +14,7 @@ export default async function BillingPage({
         <div className="sct-content">
           <div className="sct-header">
             <h4>Your Payment was Successful!</h4><br />
-            <p>Thank you for your payment! We will now be able to renue your domain name and continue the hosting of your website. As always, feel free to reach out if you require any assistance.</p>
+            <p>Thank you for your payment! As always, feel free to reach out if you require any assistance.</p>
           </div>
           <div className="text">
           </div>

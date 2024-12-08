@@ -48,27 +48,31 @@ export async function POST(request: NextRequest) {
         payment_method: paymentMethodID, // Use the payment method provided by the user
         off_session: true, // Payment is made off-session, i.e., without further user interaction
         confirm: true, // Automatically confirm the payment
-        description: 'Website Domain and Server Setup Fee',
+        description: (invoice.totalTitle ? invoice.totalTitle : 'Website Domain and Server Setup Fee'),
       });
     }
 
-    const price = await stripe.prices.create({
-      unit_amount: invoice.monthly,
-      currency: 'usd',
-      recurring: { interval: 'month' },
-      product_data: {
-        name: 'Web Hosting Fee',
-      },
-    });
+    if (invoice.monthly && invoice.monthly != 0 && invoice.monthly != '') {
+      const price = await stripe.prices.create({
+        unit_amount: invoice.monthly,
+        currency: 'usd',
+        recurring: { interval: 'month' },
+        product_data: {
+          name: (invoice.monthlyTitle ? invoice.monthlyTitle : "Hosting Fee"),
+        },
+      });
+  
+      const subscription = await stripe.subscriptions.create({
+        customer: customer.id,
+        items: [{ price: price.id }],
+        default_payment_method: paymentMethodID,
+        expand: ['latest_invoice.payment_intent'], // Expand the payment intent for the initial payment
+      });
 
-    const subscription = await stripe.subscriptions.create({
-      customer: customer.id,
-      items: [{ price: price.id }],
-      default_payment_method: paymentMethodID,
-      expand: ['latest_invoice.payment_intent'], // Expand the payment intent for the initial payment
-    });
+      return NextResponse.json({ clientSecret: initialPaymentIntent ? initialPaymentIntent.client_secret : '', subscriptionId: subscription.id, });
+    }
 
-    return NextResponse.json({ clientSecret: initialPaymentIntent ? initialPaymentIntent.client_secret : '', subscriptionId: subscription.id, });
+    return NextResponse.json({ clientSecret: initialPaymentIntent ? initialPaymentIntent.client_secret : '', });
   } catch (error) {
     console.error("Internal Error:", error);
     return NextResponse.json(
