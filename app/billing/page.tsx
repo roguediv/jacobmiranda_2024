@@ -1,6 +1,7 @@
 import TextInput from "@/components/elements/html/TextInput";
 import ToggleList from "@/components/elements/html/ToggleList";
 import CptInvoice from "@/components/parts/billing/CptInvoice";
+import { Invoice } from "@/scripts/data/BillingInterface";
 
 export default async function BillingPage({
   searchParams,
@@ -9,6 +10,8 @@ export default async function BillingPage({
 }) {
   const params = await searchParams;
   const useLastInvoice = params.useLastInvoice;
+  let invoice : Partial<Invoice> = {totalTitle: "Initial Payment", total: 90000, monthlyTitle: "Website Hosting", monthly: 3500, email: "mail@gmail.com", name: "Name"};
+
   
   return (
     <>
@@ -20,7 +23,7 @@ export default async function BillingPage({
             <p>To make this website live, you'll need to select a domain name, choose the professional emails you'd like to associate with your domain, and provide your billing information. Please complete the following fields to finalize the setup of your website.</p>
           </div>
           <div className="text">
-            <CptInvoice hasDomainEmailSelector={true}/>
+            <CptInvoice hasDomainEmailSelector={true} invoice={invoice}/>
             <div>
               <p className="v2 mb">Please choose a domain name:</p>
               <p className="v2"><b>Available Domain Names Include</b></p>
