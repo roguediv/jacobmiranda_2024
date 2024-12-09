@@ -19,7 +19,7 @@ export default async function SettingsPage(props: {params: Promise<{id: string}>
             <p>Complete your payment for web services</p>
           </div>
           <div className="text">
-            <CptInvoice invoice={invoice} />
+            <CptInvoice invoice={invoice!} />
             <StripePayment invoice={invoice!} />
           </div>
         </div>
