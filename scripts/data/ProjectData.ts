@@ -5,9 +5,10 @@ export const ProjectData: Project[] = [
     body: {
       title: "whimsydecor",
       displayTitle: "Whimsy Decor",
-      header: "Curating spaces that inspire, one design at a time",
-      desc: "Curating spaces that inspire, one design at a time",
+      header: "Curating spaces that inspire, with every design.",
+      desc: "Developed and designed a visually stunning home decorating portfolio for a St. Louis-based interior design company. Seamlessly integrated a custom CMS and backend database.",
       theme: "theme-darkgreen",
+      link: "https://whimsydecorstl.com/",
     },
     sct1: {
       title: "Curating spaces that <h>inspire</h>, with every design.",
@@ -76,6 +77,7 @@ export const ProjectData: Project[] = [
       header: "Amplifying your music experience, one beat at a time.",
       desc: "Jamaine, your go-to for creating awesome jams, is devoted to making music. JamDealer serves as his platform to connect with new audiences and assist them in selecting the perfect beats for their music projects.",
       theme: "theme-purple1",
+      link: "https://jamdealer.com/",
     },
     sct1: {
       title: "Your go-to fam for <h>creating<h> awesome jams.",
@@ -217,7 +219,7 @@ export const ProjectData: Project[] = [
       title: "Equipping creators with <h>innovative</h> tools for digital storytelling.",
       overview: "FansLyte is a platform designed for content creators to sell their work directly to fans, fostering a direct and supportive relationship. I developed the FansLyte website from the ground up, focusing on both functionality and visibility. By creating a user-friendly and responsive site, I ensured a seamless experience for both creators and fans. Through strategic SEO efforts, I increased the site's online presence, driving more traffic and engagement.",
       timeframe: {
-        num: "3",
+        num: "9",
         type: "months",
         desc: "Minimum viable product"
       },

@@ -50,7 +50,7 @@ export default async function page(props: {params: Promise<{title: string}>}) {
   return (
     <div className={`pge-project ${proj.body.theme} project-${proj.body.title}`}>
       <Header page="project" title={title} />
-      <ProjectSct1 title={proj.sct1.title} overview={proj.sct1.overview} timeframe={proj.sct1.timeframe} technologies={proj.sct1.technologies} />
+      <ProjectSct1 title={proj.sct1.title} link={proj.body.link} overview={proj.sct1.overview} timeframe={proj.sct1.timeframe} technologies={proj.sct1.technologies} />
       <ProjectSct2 title={title} header={proj.sct2.header} desc={proj.sct2.desc} card1={proj.sct2.card1} card2={proj.sct2.card2} />
       <ProjectSct3 title={title} header1={proj.sct3.header1} desc1={proj.sct3.desc1} header2={proj.sct3.header2} desc2={proj.sct3.desc2} />
       <ProjectSct4 title={title} header={proj.sct4.header} desc={proj.sct4.desc} />

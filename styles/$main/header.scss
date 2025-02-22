@@ -437,6 +437,7 @@ header {
   }
 
   &.project {
+    z-index: 0;
     .background {
       img {
         object-fit: cover;

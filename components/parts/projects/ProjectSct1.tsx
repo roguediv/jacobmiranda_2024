@@ -1,9 +1,11 @@
 'use client'
 
 import ObserveElement from "@/components/$functions/ObserveElement";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { DiPhotoshop } from "react-icons/di";
 import { FaDigitalOcean, FaHtml5, FaPhp, FaReact, FaSass, FaUbuntu, FaWordpress } from "react-icons/fa";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { IoLogoFigma } from "react-icons/io5";
 import { SiMysql, SiNginx, SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
@@ -11,12 +13,13 @@ import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
 type props = {
   className?: string;
   title: string | undefined;
+  link?: string;
   overview: string | undefined;
   timeframe: { num: string; type: string; desc: string; } | undefined;
   technologies: {react: number; mysql: number; next: number; php: number; wordpress: number; ts: number; figma: number, photoshop: number, tailwind: number; html: number; sass: number; digitalOcean: number; ubuntu: number; nginx: number; } | undefined;
 }
 
-const ProjectSct1 : React.FC<props> = ({className = '', title, overview, timeframe, technologies}) => {
+const ProjectSct1 : React.FC<props> = ({className = '', title, link = null, overview, timeframe, technologies}) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -44,6 +47,7 @@ const ProjectSct1 : React.FC<props> = ({className = '', title, overview, timefra
       })}</h2>
         <div className="content">
           <div className="c1">
+            {link ? <Link href={link} target="_blank">Click Here to Visit Website <FaArrowLeftLong /></Link> : <></>}
             <h6>Overview</h6>
             <p>{overview}</p>
           </div>
