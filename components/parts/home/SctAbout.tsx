@@ -221,7 +221,7 @@ const SctAbout : React.FC<props> = ({className = ''}) => {
             <h4>Contact me now so we can start working together!</h4>
             <div className="col-2">
               <BtnForm className='fuchsia' form='ContactForm' text='Contact Me' />
-              <Link href="https://whimsydecorstl.com/media/resume.pdf" target="_blank"><button>Resume</button></Link>
+              <Link href="https://whimsydecorstl.com/media/resume.pdf" className="ignore" target="_blank"><button>Resume</button></Link>
             </div>
           </div>
           <p>Jacob channels his passion into designing everything from websites to video games, solving complex problems with creativity.</p>
