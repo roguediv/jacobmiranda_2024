@@ -22,11 +22,11 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
   return (
     <section id="home-sct-3" className="theme-dark SctEducation">
       <div className="top">
-        <Image src="/images/assets/techicons/eduTop.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
+        <Image src="/images/assets/techIcons/eduTop.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
       </div>
       <div className="sct-content col-2">
         <div className="r1">
-         <Image src="/images/assets/techicons/lines.png" className="techIcon lines" width={878.5} height={86.5} alt="" />
+         <Image src="/images/assets/techIcons/lines.png" className="techIcon lines" width={878.5} height={86.5} alt="" />
           {/* <svg viewBox="0 0 880 88" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="mask0_296_2721" style={{maskType: "alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="880" height="88"><path d="M1 80L70.5 20H203L220 1H879.5V64.5H616.5V87.5H1V80Z" fill="#DDFFEA" stroke="#DDFFEA"/></mask><g mask="url(#mask0_296_2721)"><rect x="-12" y="-4.5" width="969.5" height="183" stroke="#CF12BC"/><path d="M-12.5 3H958" stroke="#CF12BC"/><path d="M-12.5 7H958" stroke="#CF12BC"/><path d="M-12.5 11H958" stroke="#CF12BC"/><path d="M-12.5 15H958" stroke="#CF12BC"/><path d="M-12.5 19H958" stroke="#CF12BC"/><path d="M-12.5 23H958" stroke="#CF12BC"/><path d="M-12.5 27H958" stroke="#CF12BC"/><path d="M-12.5 31H958" stroke="#CF12BC"/><path d="M-12.5 35H958" stroke="#CF12BC"/><path d="M-12.5 39H958" stroke="#CF12BC"/><path d="M-12.5 43H958" stroke="#CF12BC"/><path d="M-12.5 47H958" stroke="#CF12BC"/><path d="M-12.5 51H958" stroke="#CF12BC"/><path d="M-12.5 55H958" stroke="#CF12BC"/><path d="M-12.5 59H958" stroke="#CF12BC"/><path d="M-12.5 63H958" stroke="#CF12BC"/><path d="M-12.5 67H958" stroke="#CF12BC"/><path d="M-12.5 71H958" stroke="#CF12BC"/><path d="M-12.5 75H958" stroke="#CF12BC"/><path d="M-12.5 79H958" stroke="#CF12BC"/><path d="M-12.5 83H958" stroke="#CF12BC"/><path d="M-12.5 87H958" stroke="#CF12BC"/></g></svg> */}
           <div className="sct-header">
             <h6>Education</h6>
@@ -51,8 +51,11 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
                 <h6 className="v2">Bachelor Degree</h6>
                 <p className="v2">Computer Science</p>
               </div>
-              <li><p className="v2"> <b>Capstone Project</b> <br /> Designed and developed a full-stack web application.</p></li>
-              <li><p className="v2"><b>Driven</b> <br /> Balancing a job and maintaining good grades.</p></li>
+              <ul>
+                <li><p className="v2"> <b>Capstone Project</b> <br /> Designed and developed a full-stack web application.</p></li>
+                <li><p className="v2"><b>Driven</b> <br /> Balancing a job and maintaining good grades.</p></li>
+
+              </ul>
             </div>
             <div className="i">
               <div className="triangle"></div>
@@ -76,7 +79,7 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
         </div>
       </div>
       <div className="bottom">
-        <Image src="/images/assets/techicons/eduBot.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
+        <Image src="/images/assets/techIcons/eduBot.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
       </div>
       <div className="bottom-div"></div>
     </section>
