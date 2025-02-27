@@ -22,7 +22,7 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
   return (
     <section id="home-sct-3" className="theme-dark SctEducation">
       <div className="top">
-        <Image src="/images/assets/techIcons/eduTop.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
+        <Image src="/images/assets/techIcons/eduTop.png" priority className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
       </div>
       <div className="sct-content col-2">
         <div className="r1">
@@ -79,7 +79,7 @@ const SctEducation : React.FC<props> = ({className = ''}) => {
         </div>
       </div>
       <div className="bottom">
-        <Image src="/images/assets/techIcons/eduBot.png" className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
+        <Image src="/images/assets/techIcons/eduBot.png" priority className="techIcon eduTop" width={2700} height={303} alt="Top Transition" />
       </div>
       <div className="bottom-div"></div>
     </section>
