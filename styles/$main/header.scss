@@ -689,6 +689,7 @@ header {
   }
 
   &.project {
+    z-index: 0;
     .background {
       img {
         object-fit: cover;
@@ -791,6 +792,9 @@ header {
             @media (max-width: $phone) {
               bottom: -34vh;
             }
+            @media (max-height: 600px) {
+              bottom: -267px;
+            }
           }
         }
         .p2 {
@@ -800,6 +804,9 @@ header {
             color: var(--neutral-white);
             @media (max-width: $phone) {
               top: -8.32vh;
+            }
+            @media (max-height: 600px) {
+              top: -72px;
             }
           }
         }

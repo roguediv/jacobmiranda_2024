@@ -81,7 +81,7 @@ const Nav: React.FC<props> = ({className = ''}) => {
           <div className="nav-content">
             <Socials/>
             <div className="logo">
-              <SvgLogo />
+              <Link href="/" className='ignore'><SvgLogo /></Link>
             </div>
             <div className="nav-wrapper">
               <NavLinks />

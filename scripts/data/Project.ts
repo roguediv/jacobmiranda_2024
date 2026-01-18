@@ -5,6 +5,7 @@ export interface Project {
     header?: string;
     desc?: string;
     theme?: string;
+    link?: string;
   }
   sct1: {
     title?: string;

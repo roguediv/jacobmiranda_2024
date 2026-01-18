@@ -48,6 +48,7 @@
   #project-sct-1 {
     position: relative;
     margin-top: calc(-25vh - var(--gap-sct));
+    z-index: 1;
     @media (max-width: $phone) {
       margin-top: calc(-15vh - var(--gap-sct));
     }
@@ -102,6 +103,18 @@
             display: grid;
             gap: var(--gap-3);
             height: min-content;
+            a {
+              color: var(--project-theme-color);
+              width: max-content;
+              font-weight: 500;
+              display: flex;
+              gap: var(--gap-1);
+              align-items: center;
+              svg {
+                transform: rotate(180deg);
+              }
+              &:hover {color: var(--neutral-400);}
+            }
             .r1, .r2 {
               display: grid;
               height: min-content;

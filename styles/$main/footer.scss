@@ -18,12 +18,7 @@ footer {
   p {
     @media (min-width: $phone) {max-width: 260px;}
   }
-  .socials {
-    display: flex;
-    gap: 8px;
-    justify-content: space-between;
-    width: min-content;
-  }
+
   .i {
     display: flex;
     gap: 8px;
@@ -52,8 +47,19 @@ footer {
       display: flex;
       justify-content: space-between;
       margin-bottom: var(--gap-4);
+      gap: var(--gap-2);
+      align-items: center;
       .Socials {
         min-width: max-content;
+        @media (max-width: 500px) {
+          display: flex;
+          gap: 16px;
+          justify-content: space-between;
+          width: min-content;
+          a svg {
+            width: 24px;
+          }
+        }
       }
     }
   }

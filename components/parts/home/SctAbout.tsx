@@ -10,6 +10,7 @@ import SvgDiamond from "../../svg/SvgDiamond";
 import { useEffect, useState } from "react";
 import ObserveElement from "@/components/$functions/ObserveElement";
 import BtnForm from "@/components/popups/BtnForm";
+import Link from "next/link";
 
 type props = {
   className?: string;
@@ -557,7 +558,13 @@ const SctAbout: React.FC<props> = ({ className = "" }) => {
                   form="ContactForm"
                   text="Contact Me"
                 />
-                <button>Resume</button>
+                <Link
+                  href="https://whimsydecorstl.com/media/resume.pdf"
+                  className="ignore button"
+                  target="_blank"
+                >
+                  <button>Resume</button>
+                </Link>
               </div>
             </div>
             <p>
