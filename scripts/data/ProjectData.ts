@@ -205,72 +205,72 @@ export const ProjectData: Project[] = [
       }]
     }
   },
-  {
-    body: {
-      title: "fanslyte",
-      displayTitle: "Fanslyte",
-      header: "Equipping creators with innovative tools for digital storytelling.",
-      desc: "A social media platform designed for influencers to produce exclusive content updates for their supporters via a tiered system, while efficiently organizing their follower base using labels, tags, and databases.",
-      theme: "theme-purple2",
-    },
-    sct1: {
-      title: "Equipping creators with <h>innovative</h> tools for digital storytelling.",
-      overview: "FansLyte is a platform designed for content creators to sell their work directly to fans, fostering a direct and supportive relationship. I developed the FansLyte website from the ground up, focusing on both functionality and visibility. By creating a user-friendly and responsive site, I ensured a seamless experience for both creators and fans. Through strategic SEO efforts, I increased the site's online presence, driving more traffic and engagement.",
-      timeframe: {
-        num: "3",
-        type: "months",
-        desc: "Minimum viable product"
-      },
-      technologies: {
-        react: 0,
-        mysql: 1,
-        next: 0,
-        php: 1,
-        wordpress: 0,
-        ts: 1,
-        figma: 1,
-        photoshop: 1,
-        tailwind: 0,
-        html: 1,
-        sass: 1,
-        digitalOcean: 1,
-        ubuntu: 1,
-        nginx: 1,
-      }
-    },
-    sct2: {
-      header: "Fully Custom Webapp",
-      desc: "FansLyte involved building a website that caters to the needs of content creators and their fans, where pages are dynamically generated and purchasing is a seamless process. The unique requirements of such a platform required a hard-coded website using custom dynamic PHP content generation and database modeling. ",
-      card1: {
-        header: "Solution",
-        desc: "Hard-Coded<br>Web Application"
-      },
-      card2: {
-        header: "Outreach",
-        desc: "SEO<br> Optimization"
-      }
-    },
-    sct3: {
-      header1: "Hardcoded Webapp",
-      desc1: "After thorough discussions about the client’s business objectives and researching their competitors, I concluded that creating a mobile-friendly, single-page web application would be the ideal approach for this project. This type of website updates content smoothly without needing to reload the entire page, providing a seamless user experience.<br><br>To achieve this, I developed a framework using PHP to generate HTML dynamically. This means that when you interact with the website—like scrolling to load more posts—information stored in a MySQL database is pulled and displayed instantly. This approach ensures that the website feels responsive and efficient, adapting to user actions in real-time while maintaining a streamlined and engaging interface.",
-      header2: "SEO Optimization",
-      desc2: "Maintaining a trustworthy social media platform is crucial for attracting new influencers and driving on-site sales. To achieve this goal for FansLyte, I focused on enhancing their online reputation. This involved actively managing reviews across platforms and optimizing search engine results for relevant keywords. By strengthening FansLyte's online presence, I significantly boosted their conversion rates and increased website traffic. This strategic approach helped solidify FansLyte as a reliable choice in the competitive social media landscape.",
-    },
-    sct4: {
-      header: "Reaching the Top of Google with a Polished Webapp",
-      desc: "FansLyte's trustworthy and dynamic platform has significantly contributed to its success, providing influencers with a robust platform to engage meaningfully with their fans while driving business growth. This website marks the initial iteration of FansLyte and has served as their primary online presence for over two years.",
-    },
-    sct5: {
-      header: "Skill I Learned",
-      items: [{
-        header: "SEO",
-        headerLow: "Optimization",
-        desc: "For Fanslyte, I worked on boosting the website’s Google ranking to build trust with the audience. I achieved top search results, encouraged reviews, and established hyperlinks. This project enhanced my skills in SEO and social media integration while teaching me effective strategies for increasing online visibility and trust."
-      }, {
-        header: "Webapp",
-        headerLow: "Hardcoded",
-        desc: "Working on the Fanslyte project, I gained a solid understanding of PHP by hardcoding a system that made web pages update without reloading the entire page. This taught me how many website builders and frameworks work behind the scenes."
-      }]
-    }
-  }, 
+  // {
+  //   body: {
+  //     title: "fanslyte",
+  //     displayTitle: "Fanslyte",
+  //     header: "Equipping creators with innovative tools for digital storytelling.",
+  //     desc: "A social media platform designed for influencers to produce exclusive content updates for their supporters via a tiered system, while efficiently organizing their follower base using labels, tags, and databases.",
+  //     theme: "theme-purple2",
+  //   },
+  //   sct1: {
+  //     title: "Equipping creators with <h>innovative</h> tools for digital storytelling.",
+  //     overview: "FansLyte is a platform designed for content creators to sell their work directly to fans, fostering a direct and supportive relationship. I developed the FansLyte website from the ground up, focusing on both functionality and visibility. By creating a user-friendly and responsive site, I ensured a seamless experience for both creators and fans. Through strategic SEO efforts, I increased the site's online presence, driving more traffic and engagement.",
+  //     timeframe: {
+  //       num: "3",
+  //       type: "months",
+  //       desc: "Minimum viable product"
+  //     },
+  //     technologies: {
+  //       react: 0,
+  //       mysql: 1,
+  //       next: 0,
+  //       php: 1,
+  //       wordpress: 0,
+  //       ts: 1,
+  //       figma: 1,
+  //       photoshop: 1,
+  //       tailwind: 0,
+  //       html: 1,
+  //       sass: 1,
+  //       digitalOcean: 1,
+  //       ubuntu: 1,
+  //       nginx: 1,
+  //     }
+  //   },
+  //   sct2: {
+  //     header: "Fully Custom Webapp",
+  //     desc: "FansLyte involved building a website that caters to the needs of content creators and their fans, where pages are dynamically generated and purchasing is a seamless process. The unique requirements of such a platform required a hard-coded website using custom dynamic PHP content generation and database modeling. ",
+  //     card1: {
+  //       header: "Solution",
+  //       desc: "Hard-Coded<br>Web Application"
+  //     },
+  //     card2: {
+  //       header: "Outreach",
+  //       desc: "SEO<br> Optimization"
+  //     }
+  //   },
+  //   sct3: {
+  //     header1: "Hardcoded Webapp",
+  //     desc1: "After thorough discussions about the client’s business objectives and researching their competitors, I concluded that creating a mobile-friendly, single-page web application would be the ideal approach for this project. This type of website updates content smoothly without needing to reload the entire page, providing a seamless user experience.<br><br>To achieve this, I developed a framework using PHP to generate HTML dynamically. This means that when you interact with the website—like scrolling to load more posts—information stored in a MySQL database is pulled and displayed instantly. This approach ensures that the website feels responsive and efficient, adapting to user actions in real-time while maintaining a streamlined and engaging interface.",
+  //     header2: "SEO Optimization",
+  //     desc2: "Maintaining a trustworthy social media platform is crucial for attracting new influencers and driving on-site sales. To achieve this goal for FansLyte, I focused on enhancing their online reputation. This involved actively managing reviews across platforms and optimizing search engine results for relevant keywords. By strengthening FansLyte's online presence, I significantly boosted their conversion rates and increased website traffic. This strategic approach helped solidify FansLyte as a reliable choice in the competitive social media landscape.",
+  //   },
+  //   sct4: {
+  //     header: "Reaching the Top of Google with a Polished Webapp",
+  //     desc: "FansLyte's trustworthy and dynamic platform has significantly contributed to its success, providing influencers with a robust platform to engage meaningfully with their fans while driving business growth. This website marks the initial iteration of FansLyte and has served as their primary online presence for over two years.",
+  //   },
+  //   sct5: {
+  //     header: "Skill I Learned",
+  //     items: [{
+  //       header: "SEO",
+  //       headerLow: "Optimization",
+  //       desc: "For Fanslyte, I worked on boosting the website’s Google ranking to build trust with the audience. I achieved top search results, encouraged reviews, and established hyperlinks. This project enhanced my skills in SEO and social media integration while teaching me effective strategies for increasing online visibility and trust."
+  //     }, {
+  //       header: "Webapp",
+  //       headerLow: "Hardcoded",
+  //       desc: "Working on the Fanslyte project, I gained a solid understanding of PHP by hardcoding a system that made web pages update without reloading the entire page. This taught me how many website builders and frameworks work behind the scenes."
+  //     }]
+  //   }
+  // }, 
 ];
