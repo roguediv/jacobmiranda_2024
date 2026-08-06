@@ -15,53 +15,58 @@ $tablet: 1200px;
   --gap-4: 4rem;
   --gap-sct: 10rem;
   --gap-sides: 15vw;
-  --transition: .25s;
+  --transition: 0.25s;
 
   /// # Colors
   /// SeaGreen
-  --seagreen-100: #DDFFEA;
-  --seagreen-200: #B6FCD1;
-  --seagreen-300: #8FF9B7;
-  --seagreen-400: #60F49C;
-  --seagreen-500: #0F3044;
+  --seagreen-100: #ddffea;
+  --seagreen-200: #b6fcd1;
+  --seagreen-300: #8ff9b7;
+  --seagreen-400: #60f49c;
+  --seagreen-500: #0f3044;
 
   /// Fuchsia
-  --fuchsia-100: #FFE6FC;
-  --fuchsia-200: #F6C0EF;
-  --fuchsia-300: #E785DB;
-  --fuchsia-400: #CF12BC;
-  --fuchsia-500: #AB0B9B;
+  --fuchsia-100: #ffe6fc;
+  --fuchsia-200: #f6c0ef;
+  --fuchsia-300: #e785db;
+  --fuchsia-400: #cf12bc;
+  --fuchsia-500: #ab0b9b;
 
   /// Error
-  --error-100: #FFDFDF;
-  --error-200: #D40000;
+  --error-100: #ffdfdf;
+  --error-200: #d40000;
 
   /// warning
-  --warning-100: #FFF4D8;
-  --warning-200: #FFB800;
+  --warning-100: #fff4d8;
+  --warning-200: #ffb800;
 
   /// Success
-  --success-100: #E1FFEB;
-  --success-200: #01A73A;
+  --success-100: #e1ffeb;
+  --success-200: #01a73a;
 
   /// Info
-  --info-100: #E5F5FF;
-  --info-200: #0374BA;
+  --info-100: #e5f5ff;
+  --info-200: #0374ba;
 
   /// Neautral
-  --neutral-white: #FFFFFF;
+  --neutral-white: #ffffff;
   --neutral-100: #f8f8f8;
-  --neutral-200: #E6E6E6;
+  --neutral-200: #e6e6e6;
   --neutral-300: #999999;
   --neutral-400: #5a5a5a;
   --neutral-500: #222222;
   --neutral-black: #000000;
 
   /// Gradients
-  --logo-gradient: linear-gradient(to bottom right, var(--fuchsia-400), #008FE7, var(--seagreen-400));
-  --green-gradient: linear-gradient(to bottom right, #40C997, #116661);
-  --blue-gradient: linear-gradient(to bottom right, #60F49C 30%, #30BCCE 60%);
-  --Fuchsia-gradient: linear-gradient(to top right, #CF12BC, #0C0D85);
+  --logo-gradient: linear-gradient(
+    to bottom right,
+    var(--fuchsia-400),
+    #008fe7,
+    var(--seagreen-400)
+  );
+  --green-gradient: linear-gradient(to bottom right, #40c997, #116661);
+  --blue-gradient: linear-gradient(to bottom right, #60f49c 30%, #30bcce 60%);
+  --Fuchsia-gradient: linear-gradient(to top right, #cf12bc, #0c0d85);
   --darkpuple-gradient: linear-gradient(to bottom right, #222222, #321632);
 
   /// # Fonts
@@ -97,57 +102,77 @@ $tablet: 1200px;
   --h5-1-hgt: clamp(100%, 2.5vw, 100%);
   --h5-1-wgt: clamp(600, 2.5vw, 400);
 
-  --h6-1-size: clamp(14px, 2vw + .25px, 22px);
+  --h6-1-size: clamp(14px, 2vw + 0.25px, 22px);
   --h6-1-hgt: clamp(135%, 2vw, 135%);
   --h6-1-wgt: clamp(600, 2vw, 400);
-  --h6-1-spc: clamp(3px, .5vw + 1px, 12px);
+  --h6-1-spc: clamp(3px, 0.5vw + 1px, 12px);
 
-  --h6-2-size: clamp(16px, 2vw + .25rem, 18px);
+  --h6-2-size: clamp(16px, 2vw + 0.25rem, 18px);
   --h6-2-hgt: clamp(135%, 2vw, 135%);
   --h6-2-wgt: clamp(400, 2vw, 400);
-  --h6-2-spc: clamp(0px, .5vw +1px, 0px);
+  --h6-2-spc: clamp(0px, 0.5vw +1px, 0px);
 
   /// P
-  --p-1-size: clamp(16px, 2.5vw + .25rem, 20px);
-  --p-1-hgt: clamp(175%, 2.5vw + .25rem, 175%);
+  --p-1-size: clamp(16px, 2.5vw + 0.25rem, 20px);
+  --p-1-hgt: clamp(175%, 2.5vw + 0.25rem, 175%);
   --p-1-wgt: clamp(600, 2.5vw, 400);
-  --p-2-size: clamp(14px, 2.5vw + .25rem, 16px);
-  --p-2-hgt: clamp(150%, 2.5vw + .25rem, 150%);
+  --p-2-size: clamp(14px, 2.5vw + 0.25rem, 16px);
+  --p-2-hgt: clamp(150%, 2.5vw + 0.25rem, 150%);
   --p-2-wgt: clamp(600, 2.5vw, 400);
 
-  /// Label 
-  --label-size: clamp(14px, 2.5vw + .25rem, 16px);
-  --label-hgt: clamp(175%, 2.5vw + .25rem, 175%);
+  /// Label
+  --label-size: clamp(14px, 2.5vw + 0.25rem, 16px);
+  --label-hgt: clamp(175%, 2.5vw + 0.25rem, 175%);
   --label-wgt: clamp(600, 2.5vw, 400);
 
   /// button
-  --button-1-size: clamp(18px, 2vw + .25rem, 24px);
-  --button-1-hgt: clamp(175%, 2vw  + .25rem, 175%);
+  --button-1-size: clamp(18px, 2vw + 0.25rem, 24px);
+  --button-1-hgt: clamp(175%, 2vw + 0.25rem, 175%);
   --button-1-wgt: clamp(600, 2vw, 400);
 
   .pge-project {
     --project-theme-color: var(--seagreen-400);
     --project-theme-color-2: var(--seagreen-400);
-    --project-theme-gradient: linear-gradient(to bottom right, #40C997, #116661);
+    --project-theme-gradient: linear-gradient(
+      to bottom right,
+      #40c997,
+      #116661
+    );
     &.theme-darkgreen {
       --project-theme-color: #406262;
       --project-theme-color-2: var(--seagreen-400);
-      --project-theme-gradient: linear-gradient(to bottom right, #40C997, #116661);
+      --project-theme-gradient: linear-gradient(
+        to bottom right,
+        #40c997,
+        #116661
+      );
     }
     &.theme-orange {
-      --project-theme-color: #F93D0E;
-      --project-theme-color-2: #F93D0E;
-      --project-theme-gradient: linear-gradient(to bottom right, #F33726, #F93D0E);
+      --project-theme-color: #f93d0e;
+      --project-theme-color-2: #f93d0e;
+      --project-theme-gradient: linear-gradient(
+        to bottom right,
+        #f33726,
+        #f93d0e
+      );
     }
     &.theme-purple1 {
-      --project-theme-color: #9055A2;
-      --project-theme-color-2: #9055A2;
-      --project-theme-gradient: linear-gradient(to bottom right, #9055A2, #4A155A);
+      --project-theme-color: #9055a2;
+      --project-theme-color-2: #9055a2;
+      --project-theme-gradient: linear-gradient(
+        to bottom right,
+        #9055a2,
+        #4a155a
+      );
     }
     &.theme-purple2 {
-      --project-theme-color: #D301F6;
-      --project-theme-color-2: #D301F6;
-      --project-theme-gradient: linear-gradient(to bottom right, #D301F6, #7E10A5);
+      --project-theme-color: #d301f6;
+      --project-theme-color-2: #d301f6;
+      --project-theme-gradient: linear-gradient(
+        to bottom right,
+        #d301f6,
+        #7e10a5
+      );
     }
   }
 }
@@ -160,7 +185,7 @@ $tablet: 1200px;
 
 @media (max-width: $phone) {
   :root {
-    --gap-1: .5rem;
+    --gap-1: 0.5rem;
     --gap-2: 1rem;
     --gap-3: 1.5rem;
     --gap-4: 2rem;
@@ -178,7 +203,17 @@ $tablet: 1200px;
 }
 
 /// # Fonts
-h1, h2, h3, h4, h5, h6, p, span, ul, li, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -199,7 +234,9 @@ a {
     line-height: var(--button-1-hgt);
     font-weight: var(--button-1-wgt);
   }
-  button {width: 100%;}
+  button {
+    width: 100%;
+  }
 }
 p {
   font-size: var(--p-1-size);
@@ -273,13 +310,13 @@ h6 {
   background-color: var(--neutral-white);
   color: var(--neutral-500);
 }
-.theme-dark{
+.theme-dark {
   background-color: var(--neutral-500);
   color: var(--neutral-white);
 }
 .theme-darkgreen {
   background-color: var(--seagreen-500);
-  color: var(--neutral-100)
+  color: var(--neutral-100);
 }
 
 /// # Buttons
@@ -289,7 +326,7 @@ button {
   font-size: var(--button-1-size);
   line-height: var(--button-1-hgt);
   font-weight: var(--button-1-wgt);
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   transition: var(--transition);
   border: 2px solid transparent;
   cursor: pointer;
@@ -302,13 +339,21 @@ button {
     background-color: var(--seagreen-400);
     transition: 0s;
     &:hover {
-      background: linear-gradient(to bottom right, var(--fuchsia-400), #008FE7, var(--seagreen-400));
+      background: linear-gradient(
+        to bottom right,
+        var(--fuchsia-400),
+        #008fe7,
+        var(--seagreen-400)
+      );
       background-clip: text;
       color: transparent;
-      border-image: 
-      linear-gradient(
-        to bottom right, var(--fuchsia-400), #008FE7, var(--seagreen-400)
-      ) 1;
+      border-image: linear-gradient(
+          to bottom right,
+          var(--fuchsia-400),
+          #008fe7,
+          var(--seagreen-400)
+        )
+        1;
     }
   }
   &.fuchsia {
@@ -323,8 +368,9 @@ button {
   }
 }
 
-/// # Inputs 
-input, textarea {
+/// # Inputs
+input,
+textarea {
   font-size: var(--fnt-h4);
   background-color: var(--col-tridary-hov);
   padding: 8px 12px;
@@ -386,7 +432,7 @@ textarea {
   }
   /* Style the checkmark pseudo-element */
   input[type="checkbox"]:before {
-    content: '\2713'; /* Unicode checkmark symbol */
+    content: "\2713"; /* Unicode checkmark symbol */
     font-size: 16px;
     color: white;
     position: absolute;
@@ -399,7 +445,8 @@ textarea {
     display: block;
   }
 }
-input, textarea {
+input,
+textarea {
   background-color: var(--col-tridary-hov);
   color: var(--col-tridary-text);
   font-size: var(--fnt-p);
@@ -444,7 +491,7 @@ $gray: #b6b6b6;
     top: 50%;
     transform: translateY(-50%);
     color: black;
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -467,21 +514,23 @@ $gray: #b6b6b6;
   ~ .form__label {
     transform: translateY(0%);
     position: absolute;
-    top: -8px ;
+    top: -8px;
     display: block;
     transition: 0.15s;
     font-size: 12px;
     font-weight: 400;
     color: $primary;
-    opacity: 1;   
-    
+    opacity: 1;
   }
   border-color: $primary;
   //border-width: 3px;
 }
 /* reset input */
-.form__field{
-  &:required,&:invalid { box-shadow:none; }
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 .form__label {
@@ -495,8 +544,11 @@ $gray: #b6b6b6;
 }
 
 /* reset input */
-.form__field{
-  &:required,&:invalid { box-shadow:none; }
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 /// # Image Bahvior
@@ -508,25 +560,39 @@ $gray: #b6b6b6;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: var(--transition);
     object-fit: cover;
   }
   &:after {
     position: absolute;
-    width: 100%;height:100%;
+    width: 100%;
+    height: 100%;
     background-color: black;
     transition: var(--transition);
-    content: '';
-    opacity: .25;
-    left: 0px;top:0px;
+    content: "";
+    opacity: 0.25;
+    left: 0px;
+    top: 0px;
   }
 }
 
 /// # Main Bodies
-div, section, input, textarea {box-sizing: border-box;}
-html, body, main {margin: 0; padding: 0;overscroll-behavior: none;}
-main {overflow: hidden;}
+div,
+section,
+input,
+textarea {
+  box-sizing: border-box;
+}
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+}
+main {
+  overflow: hidden;
+}
 html {
   overflow-x: hidden;
 }
@@ -558,8 +624,12 @@ body {
 }
 
 /// # Page Layout
-.mt {margin-top: var(--gap-1);}
-.mb {margin-bottom: var(--gap-1);}
+.mt {
+  margin-top: var(--gap-1);
+}
+.mb {
+  margin-bottom: var(--gap-1);
+}
 .col-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -574,7 +644,8 @@ body {
   flex-wrap: wrap;
 }
 main {
-  >section, >div>section {
+  > section,
+  > div > section {
     padding: var(--gap-sct) 0;
     width: 100vw;
     &.theme-divider {
@@ -582,25 +653,36 @@ main {
       padding: 0;
       .bk {
         position: absolute;
-        height: 50%;width: 100%;
-        &:nth-child(1) {top: 0px;}
-        &:nth-child(2) {bottom: 0px;}
+        height: 50%;
+        width: 100%;
+        &:nth-child(1) {
+          top: 0px;
+        }
+        &:nth-child(2) {
+          bottom: 0px;
+        }
       }
     }
     &.theme-secondary {
       color: var(--col-tridary);
       background-color: var(--col-secondary);
-      p {color: var(--col-secondary-text);}
+      p {
+        color: var(--col-secondary-text);
+      }
     }
     &.theme-secondary-2 {
       color: var(--col-tridary);
       background-color: var(--col-secondary-dark);
-      p {color: var(--col-secondary-text);}
+      p {
+        color: var(--col-secondary-text);
+      }
     }
     &.theme-tridary {
       background-color: var(--col-tridary);
       color: var(--col-secondary);
-      p {color: var(--col-tridary-text);}
+      p {
+        color: var(--col-tridary-text);
+      }
     }
     .sct-content {
       max-width: var(--max-width);
@@ -608,8 +690,10 @@ main {
       margin: 0 auto;
       display: grid;
       gap: var(--gap-2);
-      &>div {height: min-content;}
-      &>div>div {
+      & > div {
+        height: min-content;
+      }
+      & > div > div {
         height: min-content;
         &.space-top {
           margin-top: var(--gap-3);
@@ -629,31 +713,55 @@ main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: var(--gap-3);
-        &>div {display: grid;gap: var(--gap-1);}
-        .header {place-items: normal;text-align: left;}
-        @media (max-width: 1300px) {grid-template-columns: repeat(2, 1fr);}
-        @media (max-width: $phone) {grid-template-columns: repeat(1, 1fr);}
+        & > div {
+          display: grid;
+          gap: var(--gap-1);
+        }
+        .header {
+          place-items: normal;
+          text-align: left;
+        }
+        @media (max-width: 1300px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $phone) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
       .three-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--gap-3);
-        &>div {display: grid;gap: var(--gap-1);}
-        .header {place-items: normal;text-align: left;}
-        @media (max-width: $phone) {grid-template-columns: repeat(1, 1fr);}
+        & > div {
+          display: grid;
+          gap: var(--gap-1);
+        }
+        .header {
+          place-items: normal;
+          text-align: left;
+        }
+        @media (max-width: $phone) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
       .two-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: var(--gap-3);
-        &>div {display: grid;gap: var(--gap-1);}
-        .header {place-items: normal;text-align: left;}
-        
+        & > div {
+          display: grid;
+          gap: var(--gap-1);
+        }
+        .header {
+          place-items: normal;
+          text-align: left;
+        }
+
         &.push {
           @media (min-width: $phone) {
             grid-template-columns: 2fr 1fr;
             &.space-top {
-              &>div:nth-child(1) {
+              & > div:nth-child(1) {
                 margin-top: var(--gap-3);
               }
             }
@@ -663,13 +771,15 @@ main {
           @media (min-width: $phone) {
             grid-template-columns: 1fr 2fr;
             &.space-top {
-              &>div:nth-child(2) {
+              & > div:nth-child(2) {
                 margin-top: var(--gap-3);
               }
             }
           }
         }
-        @media (max-width: $phone) {grid-template-columns: repeat(1, 1fr);}
+        @media (max-width: $phone) {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
     }
     .cta-backdrop {
@@ -693,7 +803,7 @@ main {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  opacity: .2;
+  opacity: 0.2;
   filter: blur(100px);
   animation: flare 25s linear infinite;
 }
@@ -710,8 +820,8 @@ main {
     }
   }
   svg {
-    width: clamp(2rem, 2vw - .5rem, 3rem);
-    height: clamp(2rem, 2vw - .5rem, 3rem);
+    width: clamp(2rem, 2vw - 0.5rem, 3rem);
+    height: clamp(2rem, 2vw - 0.5rem, 3rem);
   }
 }
 .mobile {
@@ -724,10 +834,12 @@ main {
   height: auto;
   &.lines {
     width: 200%;
-    
+
     bottom: 75px;
     left: 0;
-    @media (max-width: $phone) {display: none;}
+    @media (max-width: $phone) {
+      display: none;
+    }
   }
   &.eduTop {
     height: 100%;

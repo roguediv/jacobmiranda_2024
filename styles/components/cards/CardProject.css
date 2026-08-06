@@ -1,0 +1,76 @@
+.CardProject {
+  display: grid;
+  grid-template-rows: 150px min-content;
+  position: relative;
+}
+.CardProject > svg, .CardProject > img, .CardProject > .background {
+  position: absolute;
+  width: 100%;
+}
+.CardProject > .background {
+  height: 75%;
+}
+.CardProject > .background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.CardProject > .background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.CardProject > .content {
+  grid-area: 2/1/span 1/span 1;
+  position: relative;
+  display: grid;
+  align-items: left;
+  text-align: left;
+  padding: var(--gap-2);
+  gap: var(--gap-1);
+  grid-template-rows: min-content min-content min-content;
+}
+.CardProject > .content svg {
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 0px);
+}
+.CardProject > .content > img, .CardProject > .content > p, .CardProject > .content > h4 {
+  height: -moz-min-content;
+  height: min-content;
+  position: relative;
+}
+.CardProject > .content > img {
+  padding-top: var(--gap-1);
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 550px) {
+  .CardProject > .content > img {
+    opacity: 0;
+  }
+}
+.CardProject > .content h4 {
+  text-transform: uppercase;
+}
+
+.ProjectCards .project-holder a:nth-child(even) .CardProject > .background:after {
+  background-image: linear-gradient(to right, transparent, var(--fuchsia-400));
+}
+.ProjectCards .project-holder a:nth-child(even) .CardProject > .content > svg .backstroke path {
+  stroke: var(--fuchsia-400);
+}
+.ProjectCards .project-holder a:nth-child(odd) .CardProject > .background:after {
+  background-image: linear-gradient(to right, transparent, var(--seagreen-400));
+}
+.ProjectCards .project-holder a:nth-child(odd) .CardProject > .content > svg .backstroke path {
+  stroke: var(--seagreen-400);
+}/*# sourceMappingURL=CardProject.css.map */
